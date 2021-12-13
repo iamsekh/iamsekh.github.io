@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/icon.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./main.js"></script>
@@ -58,13 +59,13 @@
                 <img class="me" src="./Img/me.jpg" alt="me" />
                 <h2>I'M a <span class="type"></span></h2><br><br>
            <!--social icons -->
- <div class="social"></div>
+ <div class="social">
  <ul class="icon-effect icon-effect-1a">
 <li><a href="https://github.com/iamsekh" class="icon"><i class="fa fa-github"></i></a></li>
 <li><a href="https://twitter.com/i_amsekh" class="icon"><i class="fa fa-twitter"></i></a></li>
 <li><a href="https://www.linkedin.com/in/iamsekh/" class="icon"><i class="fa fa-linkedin"></i></a></li>
 <li><a href="#https://medium.com/@iamsekh" class="icon"><i class="fa-brands fa-medium"></i></a></li>
-</ul> <br>
+</ul> </div><br>
           <a href="https://drive.google.com/file/d/1p5j69vvMkvXpYTfiO84j5OsUfsPL3EwU/view?usp=sharing" target="_blank" class="btn">
             <button class="primary_btn">
                 Resume
@@ -102,7 +103,7 @@
         <div class="container">
             <h2>
                 Here is 
-                <span class="primary" style="color:#ffff";>My learning Skills </span>
+                <span class="primary" style="color:#79ffe1";>My learning Skills </span>
             </h2>
             <div class="boxes">
                 <div class="box col-xs-12" data-aos="slide-left">
@@ -151,9 +152,9 @@
                     <div class="bootstrap4 skill-fill"></div>
                     </div>
                     <div class="skill">
-                    <div class="skill-title">Django</div>
+                    <div class="skill-title">React</div>
                     <div class="skill-bar"></div>
-                    <div class="django skill-fill"></div>
+                    <div class="react skill-fill"></div>
                     </div>
                 </div>
                 </div>
@@ -178,7 +179,7 @@
                 <div class="box" data-aos="fade-down">
                     <p>
                         I Create this Personal Portfolio using HTML,CSS,Bootstrap and Javascript(Please share your Feedback on this site or if any suggestion please share with me to impove me better).
-                        <a class="Portfolio" href="https://tahiruddinsk.xyz" target="_blank">Portfolio</a>
+                        <a class="Portfolio" href="https://iamsekh.github.io" target="_blank">Portfolio</a>
                     </p>
                 </div>
                 </div>
@@ -204,22 +205,22 @@
                 <form onsubmit="post()" action="https://formspree.io/f/xknkrlkq" method="POST" >
                 <form onsubmit="post()" method="post" action="">
                     <div class="form-group">
-                        <label for="first-name">First Name</label>
+                        <label for="first-name"><i class="fa-solid fa-user"></i>  First Name</label>
                         <input type="text" name="name" placeholder="Enter Your First Name">
                     </div>
                     <div class="form-group">
-                        <label for="last-name">Last Name</label>
+                        <label for="last-name"><i class="fa-solid fa-user"></i>  Last Name</label>
                         <input type="text" name="last_name" placeholder="Enter Your Last Name">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email"><i class="fa-solid fa-at"></i> Email</label>
                         <input type="email" name="_replyto" placeholder="Enter Your Email ">
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
+                        <label for="message"><i class="fa-solid fa-paper-plane"></i> Message</label>
                         <textarea rows="7" name="message" placeholder="Enter Your Message"></textarea>
                     </div>
-                   <input type="submit" value="Send Message" class="contact-btn">
+                    <input type="submit" value="Send Me" class="contact-btn">
                 </form>
             </div>
         </div>
@@ -228,17 +229,27 @@
     <!--==================== End-section-Contact ====================-->
 
 <!--==================== Start-Footer ====================-->
-    <footer class="bg-light">
-        <p>Copyright &copy: Tahiruddin Sk</p>
-        <h4>LET'S CONNECT</h4>              
-        <div class="social">
-            <ul class="icon-effect icon-effect-1a">
-                   <li> <a href="https://github.com/iamsekh" class="icon"><i class="fa fa-github"></i></a></li>
-                  <li><a href="https://twitter.com/i_amsekh" class="icon"><i class="fa fa-twitter"></i></a> </li>
-                  <li><a href="https://www.linkedin.com/in/iamsekh/" class="icon"><i class="fa fa-linkedin"></i></a> </li>
-                  <li><a href="#" class="icon"><i class="fa-brands fa-medium"></i></a> </li>
-                    </ul>
-        </div>
+<footer class="bg-dark">
+    <svg viewBox="0 0 1200 200">
+        <symbol id="s-text">
+            <text text-anchor="start" y="65%">TAHIRUDDIN SK</text>
+        </symbol>
+       <g class = "g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+    </svg>
+    <p>@2020 | Designed With by Tahiruddin Sk</p>
+    <div class="footer">
+        <ul class="ic-effect ic-effect-1a">
+       <li><a href="https://github.com/iamsekh" class="ic"><i class="fa fa-github"></i></a></li>
+       <li><a href="https://twitter.com/i_amsekh" class="ic"><i class="fa fa-twitter"></i></a></li>
+       <li><a href="https://www.linkedin.com/in/iamsekh/" class="ic"><i class="fa fa-linkedin"></i></a></li>
+       <li><a href="#https://medium.com/@iamsekh" class="ic"><i class="fa-brands fa-medium"></i></a></li>
+       </ul> </div>
     </footer>
     <!--==================== End-Footer ====================-->
      

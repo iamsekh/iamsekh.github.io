@@ -23,7 +23,7 @@ overflow-x: hidden;
 	color:#003fd3;
 }
 .txt{
-	color: #ffffff;
+	color: #000000;
 }
 /*******************navbar********************/
 svg {
@@ -246,17 +246,18 @@ color: #4568DC;
 	
 }
 
-.bg-light{
+/* .bg-light{
 	background :#f4f4f4;
 	color: rgb(0, 0, 0); 
 }
 .bg-dark{
 	background: #000000;
 	color: #ffffff;
-}
+} */
 
 
 /*********************skills**************************/
+
 #skills {
 	border: 1.2px solid #ffffff;
 	padding: 5rem 0;
@@ -354,7 +355,7 @@ color: #4568DC;
 	animation: bootstrap4 2s;
 	width: 56%;
   }
-  .django {
+  .react {
 	animation: django 2s;
 	width: 45%;
   }
@@ -477,7 +478,7 @@ color: #4568DC;
 	font-size: 20px;
 }
 #Projects a{
-	color: #95b3f8;
+	color: #79ffe1;
 }
 #Projects a.portfolio {
 	font-family: 'Lato', sans-serif; 
@@ -527,7 +528,7 @@ color: #4568DC;
 	margin-bottom: 0.5rem;
 	width: 60%;
 	margin-left: 10%;
-	font-size: 1.1rem;
+	font-size: 1.4rem;
 }
 #Contact .form-group input,
 #Contact .form-group textarea {
@@ -544,24 +545,27 @@ color: #4568DC;
 }      
 #Contact .form-container {
 	position: relative;
-}
-#Contact .contact-btn {
-	width: 20%;
+}#Contact .contact-btn {
+	width: 12%;
 	margin-left: 10%;
 	display: inline-block;
 	padding: 1rem 3rem;
 	border:none;
 	border-radius: 5px;
 	font-size: 1.5rem;
-	background: #003fd3;
+	background: #000000;
 	color: #fff;
 	margin-bottom: 2rem;
 	cursor: pointer;
 	transition: background 0.3sec;
 }
 #Contact .contact-btn:hover {
-	background: #003fd3;
+	background: #27c8b7;
+	color:#000;
 }
+#Contact .form-container {
+	position: relative;
+}	
 #Contact .mail-icon{
 	font-size: 4rem;
 	background: #000000;
@@ -573,12 +577,16 @@ color: #4568DC;
 	top: -7%;
 	left: 45%;
 }
-footer {
-	padding: 2.5rem;
+/* footer {
+	padding: 2rem;
+	height: 20px;
+	
 }
 footer p{
-	text-align: center;
-}
+	text-align: right;
+	height: 20px;
+	background-color: #fff;
+} */
 
 /* Responsive Media */
 @media only screen and (max-width: 768px) {
