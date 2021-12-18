@@ -15,16 +15,35 @@ line-height: 1.4;
 color: #333;
 overflow-x: hidden;	
 }
-.container {
+/* .container {
 	max-width: 1100px;
 	margin: auto;
-}
+} */
 .primary{
-	color:#003fd3;
+	color:#30e2d9;
 }
 .txt{
 	color: #000000;
 }
+/* #back-to-top-btn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		font-size: 26px;
+		width: 50px;
+		height: 50px;
+		background-color: rgb(0, 0, 0);
+		color: rgb(255, 255, 255);
+		cursor: pointer;
+		outline: none;
+		border: 3px solid #333;
+		border-radius: 50%;
+		transition-duration: 0.2s;
+		transition-timing-function: ease-in-out;
+		transition-property: background-color, color;
+	  } */
+
 /*******************navbar********************/
 svg {
     display:flex;
@@ -75,9 +94,9 @@ svg {
 }
 
 #navbar {
-	display: flex;
+	display:flex;
 	justify-content: space-between;
-	background: #fff;
+	background:#fff;
 	color: #000;
 	padding: 1rem 1.5rem;
 	position:relative;
@@ -99,7 +118,7 @@ svg {
 	margin : 0 0.7rem;
 	border-radius: 5px;
 	font-weight:1.4px; 
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif,;
 	transition: background-color 0.3s;
 }
 #navbar .nav-iteam .nav-link:hover{
@@ -149,15 +168,6 @@ color: #4568DC;
 	background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */	
 	color:#fff;
 }
-.showcase-content{
-    background: #4e54c8;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-    width: 100%;
-    height:100vh;
-    
-   
-}
-
 .circles{
     position: absolute;
     top: 0;
@@ -254,9 +264,6 @@ color: #4568DC;
     animation-delay: 0s;
     animation-duration: 11s;
 }
-
-
-
 @keyframes animate {
 
     0%{
@@ -301,10 +308,9 @@ color: #4568DC;
 		font-weight: 700;
 		color: white;
 		transition: all .5s ease-in-out;
-		animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
-		box-shadow:
-  2.8px 2.8px 2.2px rgba(180, 180, 180, 0.015),
-  6.7px 6.7px 5.3px rgba(255, 255, 255, 0.022);
+		animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99)both;
+		box-shadow: 2.8px 2.8px 2.2px rgba(180, 180, 180, 0.015),
+		            6.7px 6.7px 5.3px rgba(255, 255, 255, 0.022);
 	}
 	.primary_btn:hover{
 	  animation: gradient 3s infinite;
@@ -312,7 +318,7 @@ color: #4568DC;
 	}
 	.primary_btn:active{
 	  animation: gradient 3s infinite;
-		transform: scale(0.8);
+	transform: scale(0.8);
 	}
 	@keyframes gradient {
 		0% {
@@ -349,7 +355,7 @@ color: #4568DC;
 #about .about text ,
 
 #about .about-text {
-	text-align:start;
+	text-align:justify;
 }
 #about .about-image{
 	/* display:block; */
