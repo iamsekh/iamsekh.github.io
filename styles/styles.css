@@ -887,6 +887,10 @@ section {
   header {
     padding: 0 !important;
   }
+   @media screen and (max-width: 660px) {
+    .download-button {
+      width: 60% !important;
+    }
 
   .theme-btn {
     width: 50px;
