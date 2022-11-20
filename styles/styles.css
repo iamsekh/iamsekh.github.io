@@ -1089,13 +1089,13 @@ color: #ffffff;
   }
 
   .main-title h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
   .main-title h2 span {
-    font-size: 2.3rem;
+    font-size: 1.4rem;
   }
   .main-title h2 .bg-text {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
 }
 @media screen and (max-width: 1432px) {
@@ -1213,8 +1213,10 @@ color: #ffffff;
     padding-top: 3rem;
   }
 }
+/* @media screen and (max-width: 1432px)
+.container { */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .container {
     padding: 7rem 3rem;
   }
@@ -1232,14 +1234,12 @@ color: #ffffff;
   }
 
   .main-title h2 {
-    font-size: 3rem;
+    font-size: 1.4rem;
   }
   .main-title h2 span {
-    font-size: 3rem;
+    font-size: 1.4rem;
   }
   .main-title h2 .bg-text {
-    font-size: 4rem;
+    font-size: 2.4rem;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
