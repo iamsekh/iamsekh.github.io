@@ -620,10 +620,31 @@ marquee.marquee{
   color: var(--color-primary);
   margin-bottom: 1.5rem;
 }
-.portfolios .portfolio-item .hover-items .icons {
-  display: flex 1fr;
-  /* justify-content: center;
-  align-items: center; */
+.card-icon{
+  display: flex;
+  margin-top: 2rem;
+}
+.card-icon a{
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  cursor: pointer;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+  transition: all 0.4s ease-in-out;
+}
+.card-icon a:hover{
+  background-color: var(--color-secondary);
+  color: #ffffff;
+}
+/* .portfolios .portfolio-item .hover-items .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .portfolios .portfolio-item .hover-items .icons .icon {
   background-color: var(--color-primary);
@@ -631,8 +652,8 @@ marquee.marquee{
   width: 50px;
   height: 50px;
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  justify-content: center;
   margin: 0 1rem;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
@@ -647,7 +668,7 @@ marquee.marquee{
 }
 .portfolios .portfolio-item .hover-items .icons .icon:hover i {
   color: var(--color-primary);
-}
+} */
 
 .portfolio-item:hover .hover-items {
   opacity: 1;
