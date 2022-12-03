@@ -891,7 +891,7 @@ button:active {
   font-weight: 600;
   border-radius: 4px;
   z-index: 1;
-  max-width:45%;
+  width:180px;
 }
  
  .download-button .docs {
@@ -935,10 +935,7 @@ button:active {
  .download svg{
 color: #ffffff;
  }
- /* .download-button:hover>.download svg{
-  color:#fff;
- } */
- 
+
  .download svg polyline,.download svg line {
   animation: docs 1s infinite;
  }
@@ -1167,11 +1164,6 @@ color: #ffffff;
   .blogs {
     grid-template-columns: repeat(1, 1fr);
   }
-  @media screen and (max-width: 660px) {
-    .download-button {
-      width: 60% !important;
-    }
-  }
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1193,14 +1185,7 @@ color: #ffffff;
   .main-title h2 .bg-text {
     font-size: 4.5rem;
   }
-}
-@media screen and (max-width: 970px) {
-  .download-button{
-    width: 30%;
-    /* position: absolute;
-    top: 18.8%;
-    left:40%; */
-  }
+
   .container {
     padding: 7rem 6rem;
   }
@@ -1263,4 +1248,19 @@ color: #ffffff;
   .main-title h2 .bg-text {
     font-size: 2.4rem;
   }
+}
+#bmc-wbtn{
+width:56px !important;
+height:56px !important;
+right: 40px !important;
+bottom:20px !important;
+}
+@media screen and (max-width: 600px)
+{
+  #bmc-wbtn{
+    width:56px !important;
+    height:56px !important;
+    right: 15px !important;
+    bottom:80px !important;
+    }
 }
