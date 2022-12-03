@@ -256,6 +256,7 @@ input:checked + .slider:before {
 .header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /*About*/
