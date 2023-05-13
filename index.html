@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="/img/favicon.png">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/4295c549fd.js" crossorigin="anonymous"></script>
 </head>
 <body class="main-content">
@@ -19,17 +20,17 @@
             <div class="left-header">
                 <div class="h-shape"></div>
                 <div class="image">
-                    <img src="img/2.jpg" alt="This is a image">
+                    <img src="img/pro2.png" alt="This is a image">
                 </div>
             </div>
             <div class="right-header">
                 <h1 class="name">
-                    Hi, I'm <span>Tahiruddin Sekh.</span> 
-                    A Web <br>
+                    Hi, <br> I'm <span>Tahiruddin Sekh.</span> <br>
+                    A
                     <span class="type"></span>
                 </h1>
                 <p>
-                    I'm a Web Developer, I love to create beautiful and functional websites.
+                    Passionate web developer creating beautiful and functional websites. Expertise in Design and Development, focused on delivering exceptional user experiences. Dedicated to bringing ideas to life through innovative web solutions.
                 </p>
                 <button class="download-button">
                     <div class="docs">
@@ -46,6 +47,7 @@
         <section class="container about" id="about">
             <div class="main-title">
                 <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+                <p class="about-quote"><q>I’m trying to manage myself, not just my portfolio.</q>~ Guy Spier</p>
             </div>
             <div class="about-container">
                 <div class="left-about">
@@ -67,6 +69,7 @@
                 </div>
             <div class="about-stats">
                 <h4 class="stat-title">My Skills</h4>
+                <p class="stats-quote"><q>You must either modify your dreams or magnify your skills. </q>~ Jim Rohn</span></p>
                 <div class="progress-bars">
                     <div class="progress-bar">
                         <p class="prog-title">html5</p>
@@ -204,8 +207,9 @@
         <section class="container" id="portfolio">
             <div class="main-title">
                 <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+                <p class="portfolio-quote"><q>Without ambition one starts nothing. Without work one finishes nothing. The prize will not be sent to you. You have to win it.</q> ~ Ralph Waldo Emerson</p>
             </div>
-            <marquee class="marquee" width="100%" direction="left" height="100px" scrollamount="5">Here is some of my work that I've done in various programming languages </marquee>
+            <!-- <marquee class="marquee" width="100%" direction="left" height="100px" scrollamount="5">Here is some of my work that I've done in various programming languages </marquee> -->
             <div class="portfolios">
                 <div class="portfolio-item">
                     <div class="image">
@@ -341,6 +345,7 @@
             <div class="blogs-content">
                 <div class="main-title">
                     <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+                    <p class="blog-quote"><q>Be regular and orderly in your life, so that you may be violent and original in your work.</q>~ Gustave Flaubert</p>
                 </div>
                 <div class="blogs">
                     <div class="blog">
@@ -431,8 +436,9 @@
                     <div class="left-contact">
                         <h4>Contact me here</h4>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            In, laborum numquam? Quam excepturi perspiciatis quas quasi.
+                        Get in touch with me by filling out the form below. I'm here to help and eager to hear from you!<br>
+                        <h3>Connect with Me:<br></h3>
+                        Reach out to me using the contact details provided. Let's connect and explore opportunities together!
                         </p>
                         <div class="contact-icons">
                             <div class="contact-icon">
@@ -452,16 +458,16 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="https://formsubmit.co/tahiruddinsk111@gmail.com" method="POST" class="contact-form">
+                        <form onsubmit="sendEmail(); reset(); return false;" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
+                                <input type="text" id="name" required placeholder="YOUR NAME">
+                                <input type="email" id="email" required placeholder="YOUR EMAIL">
                             </div>
                             <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
+                                <input type="text" id="subject"required placeholder="ENTER SUBJECT">
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                                <textarea name="" id="message" cols="15" rows="8" placeholder="Message Here..."></textarea>
                             </div>
                             <button type="submit" class="send">
                                 <div class="svg-wrapper-1">
@@ -526,20 +532,31 @@
     <script src="./styles/button.js"></script>
     <script src="app.js">
     </script>
+    <!-- script_link for disable right_click -->
     <script>
         document.addEventListener('contextmenu', event => event.preventDefault());
-    </script>    
-    <!-- <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
-        data-id="tahiruddinsk" data-description="Support me on Buy me a coffee!" 
-        data-message="Thanks for visiting. Now you can buy me a coffee" data-color="#4e2ecf" 
-        data-position="Right" data-x_margin="18" data-y_margin="18">
-        </script>    -->
-        <!-- <script>
-            var ldld = new ldLoader({root: '.ldld'});
-          </script>
-          <div onclick="ldld.toggle()">
-            Toggle Loader
-          </div>
-          <img class="ldld" src="/img/preload.gif"> -->
+    </script>
+    <!-- script_link for email -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+       <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "tahiruddinsk111@gmail.com",
+    Password : "B044DA068295C83FC34F5E43262E31E74D41",
+    To : 'tahiruddinsk111@gmail.com',
+    From : 'tahiruddinsk111@gmail.com',
+    Subject : "New Contact Form Enquiry",
+    Body : "Name: " + document.getElementById("name").value
+        + "<br> Email: " + document.getElementById("email").value
+        + "<br> Message: " + document.getElementById("message").value
+}).then(
+  message => alert("Message Sent Sucessfully")
+);
+        }
+       </script>  
+       <!-- <script>
+        AOS.init();
+      </script>   -->
 </body>
 </html>
