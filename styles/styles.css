@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Secular+One&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +11,7 @@
   --color-primary: #ffffff;
   --color-secondary: #4e2ecf;
   --color-white: #0a0a0b;
+  --color-grey: #d0d1d2;
   --color-grey-1: #dbe1e8;
   --color-grey-2: #b2becd;
   --color-grey-3: #6c7983;
@@ -21,6 +24,7 @@
   --color-primary: #0a0a0b;
   --color-secondary: #4e2ecf;
   --color-white: #FFFFFF;
+  --color-grey: #d0d1d2;
   --color-grey-1: #dbe1e8;
   --color-grey-2: #b2becd;
   --color-grey-3: #6c7983;
@@ -36,6 +40,9 @@ body {
   font-size: 1.1rem;
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
+}
+body p{
+  font-family: 'Exo', sans-serif;
 }
 
 a {
@@ -246,11 +253,11 @@ input:checked+.slider:before {
 
 .header-content .left-header .image img {
   width: 100%;
-  height: 100%;
+  height: 110%;
   object-fit: cover;
-  transition: all 0.4s ease-in-out;
-  filter: grayscale(100%);
-  /* border-radius: 15px; */
+  /* transition: all 0.4s ease-in-out;
+  filter: grayscale(100%); */
+  /* border-radius: 6px; */
 }
 
 .header-content .left-header .image img:hover {
@@ -261,21 +268,22 @@ input:checked+.slider:before {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 18rem;
+  padding-right: 10.5rem;
 }
 
 .header-content .right-header .name {
   font-size: 3rem;
 }
 
+
 .header-content .right-header .name span {
   color: var(--color-secondary);
 }
 
 .header-content .right-header p {
-  margin: 1.5rem 0;
+  margin: 2rem 0;
   line-height: 2rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Exo', sans-serif;
 }
 
 /*About*/
@@ -284,6 +292,25 @@ input:checked+.slider:before {
   grid-template-columns: repeat(2, 1fr);
   padding-top: 3.5rem;
   padding-bottom: 5rem;
+}
+.about-quote{
+  font-size: 16px;
+  text-align:center;
+  text-transform: uppercase;
+  font-family: 'Secular One', sans-serif;
+}
+q::before{
+  content: open-quote;
+  color: var(--color-grey);
+  font-size: 2rem;
+  line-height: 1;
+  margin-right: 0.5rem;
+} 
+q::after {
+  content: close-quote;
+  color: var(--color-grey);
+  font-size: 2rem;
+  margin-left: 0.5rem;
 }
 
 .about-container .right-about {
@@ -472,6 +499,14 @@ input:checked+.slider:before {
 .about-stats {
   padding-bottom: 4rem;
 }
+.stats-quote{
+  margin-top: -40px;
+  padding-bottom: 50px;
+  font-size: 16px;
+  text-align:center;
+  text-transform: capitalize;
+  font-family: 'Secular One', sans-serif;
+}
 
 .about-stats .progress-bars {
   display: grid;
@@ -542,7 +577,7 @@ input:checked+.slider:before {
 
 .stat-title {
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   text-align: center;
   padding: 3.5rem 0;
   position: relative;
@@ -644,6 +679,12 @@ marquee.marquee {
   text-transform: capitalize;
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
+}
+.portfolio-quote{
+  font-family: 'Secular One', sans-serif;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .portfolios {
@@ -751,6 +792,14 @@ marquee.marquee {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
+}
+.blog-quote{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  text-align:center;
+  text-transform: capitalize;
+  font-family: 'Secular One', sans-serif;
 }
 
 .blogs .blog {
@@ -1278,6 +1327,22 @@ button:active {
     padding-right: 9rem;
   }
 }
+/* @media screen and (min-width: 660px){
+  q::before{
+    content: open-quote;
+    color: var(--color-grey);
+    font-size: 10px;
+    line-height: 1;
+    margin-right: 0.5rem;
+  } 
+  q::after {
+    content: close-quote;
+    color: var(--color-grey);
+    font-size: 10px;
+    margin-left: 0.5rem;
+  }
+} */
+  
 
 @media screen and (max-width: 660px) {
   .blogs {
