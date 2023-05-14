@@ -1325,6 +1325,9 @@ button:active {
   .header-content .right-header {
     padding-right: 9rem;
   }
+  .about-quote,.blog-quote{
+    margin-top: 40px;
+  }
 }
 /* @media screen and (min-width: 660px){
   q::before{
