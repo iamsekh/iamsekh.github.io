@@ -1356,8 +1356,11 @@ button:active {
   .about-quote,.blog-quote,.portfolio-quote,.stats-quote{
     font-size: 14px;
   }
-  .about-quote,.blog-quote{
-    margin-top: 10px;
+  .about-quote{
+    margin-top: 40px;
+  }
+  .blog-quote{
+    margin-top: 12px;
   }
   q::before{
     content: open-quote;
